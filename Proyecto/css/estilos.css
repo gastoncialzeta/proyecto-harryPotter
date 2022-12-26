@@ -1,0 +1,662 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-areas:"header"
+                        "main"
+                        "footer";
+    grid-template-rows: 0.5fr 8fr 0.5fr;
+
+}
+
+.contenedor-orden{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-areas:"header"
+                        "main"
+                        "footer";
+    grid-template-rows: 0.2fr 8fr 0.3fr;
+
+}
+
+.contenedor-curio{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-areas:"header"
+                        "main"
+                        "footer";
+    grid-template-rows: 0.3fr 8fr 0.5fr;
+
+}
+
+.contenedor-videojuegos{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-areas:"header"
+                        "main"
+                        "footer";
+    grid-template-rows: 0.5fr 5fr 0.8fr;
+
+}
+
+.contenedor-homenajes{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-areas:"header"
+                        "main"
+                        "footer";
+    grid-template-rows: 0.4fr 18fr 1fr;
+
+}
+
+.logo{
+    width: 5rem;
+    height: 5rem;
+}
+
+header{
+    display: flex;
+    grid-area: header;
+    justify-content: space-between;
+}
+
+main{
+    display: flex;
+    grid-area: header;
+}
+
+footer{
+    display: flex;
+    grid-area: footer;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+}
+
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: black;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    list-style-type: none;
+    align-items: center;
+    font-family: 'Cinzel', serif;
+    font-size: 25px;
+    margin-top: 3rem;
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+    display: block;
+    text-transform: uppercase;
+    margin: 20px 0;
+    padding: 10px 20px;
+}
+
+ul li a:hover{
+    transition: .5s;
+    z-index: 1;
+    color: grey;
+}
+
+main{
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.seccion{
+    background: black;
+    color: white;
+    font-family: 'Cinzel', serif;
+    position: relative;
+    width: 100%;
+    height: 40rem;
+}
+
+.intro {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.titulo-index{
+    background: black;
+    font-size: 16.7rem;
+    text-align: center;
+    font-weight: 400px;
+    mix-blend-mode: multiply;
+}
+
+
+.seccion-dos{
+    background-image: url(../archivos/imagenes/hogwarts.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto-index{
+    font-family: 'Cinzel', serif;
+    font-size: 1.3rem;
+    width: 70%;
+    margin: 3rem 0 3rem 0;
+    color: white;
+    background-color: rgba(94, 89, 89, 0.558);
+    border-radius: .3rem;
+}
+
+.card-harry{
+    width: 90%;
+    height: 70%;
+}
+
+.card-harry:hover{
+    transition: 5s;
+    width: 95%;
+    height: 75%;
+}
+
+.card-hermione{
+    width: 90%;
+    height: 70%;
+}
+
+.card-hermione:hover{
+    transition: 5s;
+    width: 95%;
+    height: 75%;
+}
+
+.card-ron{
+    width: 90%;
+    height: 70%;
+}
+
+.card-ron:hover{
+    transition: 5s;
+    width: 95%;
+    height: 75%;
+}
+
+.seccion-3{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.fuder{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: grey;
+    width: 100%;
+    height: 100%;
+}
+
+
+.contenedor-redes img{
+    margin-right: 2rem;
+}
+
+.man-orden{
+    background-image: url(../archivos/imagenes/carta-hogwarts.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.seccion1-orden{
+    display: flex;
+    background-color: rgba(128, 128, 128, 0.771);
+    color: black;
+    align-items: center;
+}
+
+.div-orden1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-orden1 h5{
+    font-size: 3rem;
+    text-decoration: underline;
+}
+
+.div-orden1 p{
+    font-size: 1.5rem;
+}
+
+.seccion2-orden{
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: rgba(128, 128, 128, 0.771);
+    color: black;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.div-orden2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-orden2 h5{
+    font-size: 3rem;
+    text-decoration: underline;
+}
+
+.div-orden2 p{
+    font-size: 1.5rem;
+}
+
+.seccion3-orden{
+    display: flex;
+    background-color: rgba(128, 128, 128, 0.771);
+    color: black;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.seccion3-orden img{
+    width: 500px;
+    height: 500px;
+}
+
+.div-orden3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-orden3 h5{
+    font-size: 3rem;
+    text-decoration: underline;
+}
+
+.div-orden3 p{
+    font-size: 1.5rem;
+}
+
+.seccion4-orden{
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: rgba(128, 128, 128, 0.771);
+    color: black;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.seccion4-orden img{
+    width: 500px;
+    height: 500px;
+}
+
+.div-orden4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-orden4 h5{
+    font-size: 3rem;
+    text-decoration: underline;
+}
+
+.div-orden4 p{
+    font-size: 1.5rem;
+}
+
+.seccion5-orden{
+    display: flex;
+    background-color: rgba(128, 128, 128, 0.771);
+    color: black;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.seccion5-orden img{
+    width: 500px;
+    height: 500px;
+}
+
+.div-orden5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-orden5 h5{
+    font-size: 3rem;
+    text-decoration: underline;
+}
+
+.div-orden5 p{
+    font-size: 1.5rem;
+}
+
+.seccion6-orden{
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: rgba(128, 128, 128, 0.771);
+    color: black;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.seccion6-orden img{
+    width: 500px;
+    height: 500px;
+}
+
+.div-orden6{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-orden6 h5{
+    font-size: 3rem;
+    text-decoration: underline;
+}
+
+.div-orden6 p{
+    font-size: 1.5rem;
+}
+
+.seccion7-orden{
+    display: flex;
+    background-color: rgba(128, 128, 128, 0.771);
+    color: black;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.div-orden7{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-orden7 h5{
+    font-size: 3rem;
+    text-decoration: underline;
+}
+
+.div-orden7 p{
+    font-size: 1.5rem;
+}
+
+.seccion8-orden{
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: rgba(128, 128, 128, 0.771);
+    color: black;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.seccion8-orden img{
+    width: 500px;
+    height: 500px;
+}
+
+.div-orden8{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-orden8 h5{
+    font-size: 3rem;
+    text-decoration: underline;
+}
+
+.div-orden8 p{
+    font-size: 1.5rem;
+}
+
+.man-curio{
+    background-image: url(../archivos/imagenes/carta-hogwarts.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.curiosidad1{
+    display: flex;
+    background-color: rgba(128, 128, 128, 0.655);
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.curiosidad2{
+    display: flex;
+    background-color: rgba(128, 128, 128, 0.655);
+    margin-top: 2rem;
+    flex-direction: row-reverse;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.curiosidad2 img{
+    width: 500px;
+    height: 300px;
+}
+
+.curiosidad3{
+    display: flex;
+    background-color: rgba(128, 128, 128, 0.655);
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.curiosidad3 img{
+    width: 500px;
+    height: 300px;
+}
+
+.curiosidad4{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(128, 128, 128, 0.655);
+    margin-top: 2rem;
+    color: black;
+}
+
+.div-curiosidad4{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.div-curiosidad4 h5{
+    font-size: 2rem;
+}
+
+
+.div-curiosidad4 p{
+    font-size: 1.5rem;
+}
+
+.curiosidad5{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(128, 128, 128, 0.655);
+    margin-top: 2rem;
+    color: black;
+}
+
+.div-curiosidad5{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.div-curiosidad5 h5{
+    font-size: 2rem;
+}
+
+
+.div-curiosidad5 p{
+    font-size: 1.5rem;
+}
+
+.curiosidad6{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(128, 128, 128, 0.655);
+    margin-top: 2rem;
+    color: black;
+}
+
+.hedwig{
+    height: 500px;
+    width: 500px;
+}
+
+.div-curiosidad6{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.div-curiosidad6 h5{
+    font-size: 2rem;
+}
+
+
+.div-curiosidad6 p{
+    font-size: 1.5rem;
+}
+
+.curiosidad7{
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: rgba(128, 128, 128, 0.655);
+    margin-top: 2rem;
+    color: black;
+}
+
+.div-curiosidad7{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.div-curiosidad7 h5{
+    font-size: 2rem;
+}
+
+
+.div-curiosidad7 p{
+    font-size: 1.5rem;
+}
+
+.man-video{
+    background-image: url(../archivos/imagenes/carta-hogwarts.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.harry-camara{
+    width: 700px;
+    height: 500px;
+}
+
+.juego{
+    width: 800px;
+    height: 500px;
+}
+
+.legacy{
+    width: 800px;
+    height: 500px;
+}
+
+.carrusel{
+    margin-top: 3rem;
+}
+
+.man-homenajes{
+    background-image: url(../archivos/imagenes/carta-hogwarts.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.seccion-homenajes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.seccion-homenajes img{
+    width: 700px;
+    height: 500px;
+}
+
+.palabras{
+    display: flex;
+    align-items: center;
+    margin-top: 5rem;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(128, 128, 128, 0.538);
+    border-radius: 3rem;
+}
+
+.palabras h2{
+    font-size: 3rem;
+}
+
+.palabras p{
+    font-size: 2rem;
+}
+
+.gif{
+    margin: 8rem 0 8rem 0;
+}
+
+.gif img{
+    width: 900px;
+}
